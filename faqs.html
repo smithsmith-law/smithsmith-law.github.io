@@ -239,82 +239,40 @@ function YY_checkform() { //v4.66
 817-877-5750 </h3>
                   <p class="text text-center">This web site is designed for general information only. The information       presented at this site should not be construed to be formal legal     advice   nor the formation of a lawyer/client relationship.</p>
                   <p class="text text-center"></p>
-			  <div class="six columns">
-			    <h3><em>Contact Us</em> </h3>
-                <hr size="1" align="left" width="100%" color="#000">
-                
-                <p>PO Box 121175                  <br>
-                  Fort Worth, TX 76121<br>
-                  817.877.5750<br>
-                                </p>
-                <div class="six columns">
-                  <p><strong><strong>Business Hours</strong><br>
-                  </strong><font size="4">Monday - Friday:<br>
-                  8:00 a.m. - 5:00 p.m.<br>
-                  Available by Appointment</font></p>
-                </div>
-                 <div class="six columns"> 
-                   <p><strong>Service Area<br>
-                   </strong><font size="4">Fort Worth and the DFW Metroplex and the  counties of Tarrant, Johnson, Parker, Denton, Collin, Ellis, Kufman, and Wise. 
-                   </font></p>
-</div>
-                </p>
-                <span class="text">Important Note:  An  online question/comment does not establish or   represent an attorney-client  relationship. All agreements to represent   clients are by way of a written  contract with this firm. The response   to an e-mail inquiry does not mean that  this law firm has agreed to   represent you in this or any other matter.</span> <br>
-                <br>
-              </div>
-              <div class="one column"></div>
-               <div class="five columns">
-                 <form action="process.php" method="post" name="form1" onSubmit="YY_checkform('form1','fname','#q','0','First Name Required','lname','#q','0','Last Name Required','email','S','2','Email Required','phone','#q','0','Phone Required');return document.MM_returnValue">
-                   <h3><em>Schedule a Consultation</em></h3>
-                   <hr size="1" align="left" width="100%" color="#000">
-                   <div id="webcom-component-form-3551513019198101">
-                     <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#eee5cc">
-                       <tbody bgcolor="#eee5cc">
-                         <tr>
-                           <td align="left" width="10%" valign="top"><div id="name-id">
-                             <label for="name">Name</label>
-                             <input name="name" value="" maxlength="" type="text" id="name">
-                           </div>
-                             <div id="city-id">
-                               <label for="city">City<span valign="top">*</span></label>
-                               <input name="city2" value="" maxlength="" type="text">
-                             </div>
-                             <div id="email-id">
-                               <label for="email">Email<span valign="top">*</span></label>
-                               <input name="email" value="" maxlength="" type="text">
-                             </div>
-                             <div id="PhoneNumber-id">
-                               <label for="phone">Phone Number<span valign="top">*</span></label>
-                               <input name="phone" value="" maxlength="" type="text" id="phone">
-                             </div>
-                             <div id="comments-id">
-                               <label for="comments">Comments</label>
-                               <textarea rows="8" name="comments"></textarea>
-                             </div>
-                             *Required<br>
-                             <img src="HDWFormCaptcha/FormCaptcha.php?width=180&amp;height=60&amp;letter_count=5&amp;min_size=35&amp;max_size=45&amp;noise=200&amp;noiselength=5&amp;bcolor=ffffff&amp;border=000000" width="180" height="60" id="captchaimg" alt="security code" border="0" /><br />
-Enter Security Code:<br />
-<input type="text" size="20" name="hdcaptcha" id="hdcaptcha" value="" />
-<br />
-<?php if (isset($_GET["hdwmsg"]) && $_GET["hdwmsg"] == "invalid") echo chr(60)."font color=red".chr(62)."Please, enter the correct security code.".chr(60)."/font".chr(62); ?>
-<script type="text/javascript">function HDW_getCookie(name){  var cname = name + "=";var dc = document.cookie; dc = dc.replace(/\+/g," "); if(dc.length > 0) {begin = dc.indexOf(cname); if (begin != -1) {begin += cname.length; end = dc.indexOf(";", begin); if(end == -1) end = dc.length; var rt = dc.substring(begin, end);  return unescape(rt); } } return null;}try {var items = document.getElementsByTagName("input");for(i=0;i < items.length;i++)if (items[i].name != "hdcaptcha" && items[i].name != "hdwfail" )try{var ck = HDW_getCookie("hdw_"+items[i].name);if (ck != "" && ck != null){if (items[i].type == "checkbox")items[i].checked = true;else if (items[i].type == "radio" && items[i].value == ck)items[i].checked = true; else items[i].value = ck;}} catch (e) {}var items = document.getElementsByTagName("select");for(i=0;i < items.length;i++)try{var ck = HDW_getCookie("hdw_"+items[i].name);if (ck != "" && ck != null){for (j=0;j < items[i].length;j++)if (items[i].options[j].value == ck)items[i].selectedIndex = j;  }} catch (e) {}var items = document.getElementsByTagName("textarea");for(i=0;i < items.length;i++)try{var ck = HDW_getCookie("hdw_"+items[i].name);if (ck != "" && ck != null)items[i].value = ck;} catch (e) {}} catch (e) {}</script>
-<input type="submit" name="submit" id="submit" value="Submit">
-                             <div id="Submit-id">
-                               <div></div>
-                             </div></td>
-                         </tr>
-                       </tbody>
-                     </table>
-                   </div>
-                 </form>
-               </div>
-              </p>
-            </div>
-		</div>
-	</div></div>
-	<div style="background-color:#363e41">
-    <div class="row" style="background-color:#363e41">
-		<div class="twelve columns">
+                  <div class="twelve columns">
+                    <h3><em>Contact Us</em>&nbsp;</h3>
+                    <hr size="1" align="left" width="100%" color="#000" />
+        
+                    <div class="four columns">
+                      <p>
+                        PO Box 121175 <br />
+                        Fort Worth, TX 76121<br />
+                        817.877.5750<br />
+                      </p>
+                    </div>
+                    <div class="four columns">
+                      <p>
+                        <strong><strong>Business Hours</strong><br /> </strong>
+                        <font size="4"
+                          >Monday - Friday:<br />
+                          8:00 a.m. - 5:00 p.m.<br />
+                          Available by Appointment</font
+                        >
+                      </p>
+                    </div>
+                    <div class="four columns">
+                      <p>
+                        <strong>Service Area<br /> </strong>
+                        <font size="4"
+                          >Fort Worth and the DFW Metroplex and the counties of Tarrant,
+                          Johnson, Parker, Denton, Collin, Ellis, Kufman, and Wise.
+                        </font>
+                      </p>
+                    </div>
+                  </div>
+	<div>
+    <div class="row">
+		<div class="twelve columns"  style="background-color:#363e41">
 		  <p align="center">
           <font color="#fff" size="-1"><br>
           <script>writeCopyright();</script></font>
